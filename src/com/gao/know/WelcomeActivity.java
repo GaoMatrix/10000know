@@ -16,6 +16,9 @@ public class WelcomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
 
+        //1.拿到当前acitivity的layout的view
+        //2.绑定透明度变化的动画
+        //3.动画执行完毕后，进入主页面
         View view = findViewById(R.id.welcome_layout);
         AlphaAnimation anim = new AlphaAnimation(0.1f, 1.0f);
         anim.setDuration(3000);
